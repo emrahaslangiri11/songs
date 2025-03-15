@@ -1,0 +1,108 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #1C1C1C, #2C2C2C);
+    font-family: 'Playfair Display', serif;
+}
+
+.classical-player {
+    background: #FFFFFF;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+.classical-player::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #B8860B, #DAA520);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1C1C1C;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    margin-bottom: 1.5rem;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.elegance-button {
+    background: #FFFFFF;
+    color: #1C1C1C;
+    border: 2px solid #B8860B;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+.elegance-button:hover {
+    background: #B8860B;
+    color: #FFFFFF;
+}
+
+.graceful-transition {
+    animation: graceful 2s infinite;
+}
+
+@keyframes graceful {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.description {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border-top: 1px solid #EFEFEF;
+}
+
+.description h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #1C1C1C;
+    font-weight: 600;
+}
+
+.description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4A4A4A;
+}
